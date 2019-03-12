@@ -24,12 +24,15 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <button className="btn btn-sm btn-danger" onClick={this.callEvent}>  Save </button>
-        <input type="text" name="txtFirstName"  onChange={this.firstNameChnages}/> 
-        {this.state.firstName}
-        <a href="#" onClick={this.hrefcallevent}> Company Link </a>
-        <DisplayTable />
+    <div>
+        <div className="App-header ">  React Event Handling and API Call for table population</div>
+          <div className="App">
+            <button className="btn btn-sm btn-danger" onClick={this.callEvent} style={{margin: "20px auto"}}>  Save </button>
+            <input type="text" name="txtFirstName"  onChange={this.firstNameChnages}/> 
+            {this.state.firstName}
+            <a href="#" onClick={this.hrefcallevent}> Company Link </a>
+            <DisplayTable />
+            </div>
       </div>
     );
   }

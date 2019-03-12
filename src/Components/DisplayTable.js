@@ -21,7 +21,7 @@ export default class DisplayTable extends Component {
   render() {
     return (
         <div class="container">
-        <h2>Employee Details</h2>
+        <h2 style={{margin:"20px auto" }}>Employee Details</h2>
         <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
         <table class="table">
           <thead>
