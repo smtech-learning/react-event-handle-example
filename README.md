@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##  events, api call , Table rendering
 
-This shows how to manage events, api call , Table rendering
+This shows how to manage events, api call , Table rendering, Sticky header
 
 
 ## Available Scripts
