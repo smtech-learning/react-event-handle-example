@@ -20,6 +20,33 @@
   position: relative;
 }
 
+.Sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.App-header2 {
+  background-color: #6185fb;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+}
+
+.App-header3 {
+  background-color: #6185fb;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 .App-link {
   color: #61dafb;
 }
