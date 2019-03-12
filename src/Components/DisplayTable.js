@@ -11,9 +11,10 @@ export default class DisplayTable extends Component {
     }
     url1 = 'https://jsonplaceholder.typicode.com/todos';
     url2 = 'http://jsonplaceholder.typicode.com/users/1';
+    url3 = 'http://dummy.restapiexample.com/api/v1/employees';
 
     componentWillMount() {
-            fetch(this.url1)
+            fetch(this.url3)
             .then(res => res.json())
             .then((data) => console.log(data)|| this.setState({employeeDetails:data}) )
 }
@@ -25,18 +26,18 @@ export default class DisplayTable extends Component {
         <table class="table">
           <thead>
             <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
+              <th>Employee Name</th>
+              <th>Salary</th>
+              <th>Age</th>
             </tr>
           </thead>
                 {this.state.employeeDetails.map((data, index) => {
                     return (
                         <tbody>
                             <tr>
-                                <td> {data.title}</td>
-                                <td> {data.userId}</td>
-                                <td> {data.completed}</td>
+                                <td> {data.employee_name}</td>
+                                <td> {data.employee_salary}</td>
+                                <td> {data.employee_age}</td>
                             </tr>
                         </tbody>
                     )
